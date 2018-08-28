@@ -1,13 +1,13 @@
 package org.vaadin.virkki.carousel.client.widget;
 
-import com.vaadin.shared.AbstractComponentState
+import com.vaadin.shared.ui.AbstractComponentContainerState
 import com.vaadin.shared.Connector
 import java.util.List
 import org.vaadin.virkki.carousel.client.widget.gwt.ArrowKeysMode
 import org.vaadin.virkki.carousel.client.widget.gwt.CarouselLoadMode
 
 @SuppressWarnings(value="serial")
-class CarouselState extends AbstractComponentState {
+class CarouselState extends AbstractComponentContainerState {
 	@Property List<Connector> connectors = newArrayList
 
 	@Property CarouselLoadMode loadMode = CarouselLoadMode::SMART
